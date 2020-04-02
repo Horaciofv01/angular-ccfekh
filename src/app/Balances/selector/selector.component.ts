@@ -166,7 +166,6 @@ export class SelectorComponent implements OnInit
     this.GetObects = new CesiumGetObjects( this._http, this.viewer, this.routerAct );
     this.GetObects.mInit = this.projid;
 
-
     this.GetObects.bIsSimulator = this.bIsSimulator;
     this.GetObects.simulatorXml = this.simulatorXml;
 

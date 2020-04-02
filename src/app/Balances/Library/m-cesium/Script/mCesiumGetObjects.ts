@@ -250,7 +250,7 @@ debugger;
         //Adding Labes and points
         this.DrawLabelsAndPoints( this.viewer );
         //Adding segments
-d
+debugger;
         this.viewer.zoomTo( this.viewer.entities );
     }
     UpdateAproxheight ()
