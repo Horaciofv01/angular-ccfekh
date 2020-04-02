@@ -45,6 +45,7 @@ export class ManageObjectcs
             mPointA: mPointA,
             mPointB: mPointB,
             mObject: mRezObject,
+            
             polyline: {
                 positions: Cesium.Cartesian3.fromDegreesArrayHeights( mArrLine ),
                 width: 6,
