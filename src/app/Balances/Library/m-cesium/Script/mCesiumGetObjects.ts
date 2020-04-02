@@ -167,7 +167,7 @@ return;
     GetSimulatorProject ()
     {
 
-window.open("https://cdn.jsdelivr.net/gh/Horaciofv01/angular-ccfekh@master/src/assets/Air/" + this.simulatorXml);
+/window.open("https://cdn.jsdelivr.net/gh/Horaciofv01/angular-ccfekh@master/src/assets/Air/" + this.simulatorXml);
 
 
         $( "#mwaitmediv" ).css( 'display', 'block' );
@@ -242,7 +242,7 @@ window.open("https://cdn.jsdelivr.net/gh/Horaciofv01/angular-ccfekh@master/src/a
     DoWork ()
     {
         this.viewer.entities.removeAll();
-
+debugger;
 
         this.UpdateAproxheight();
 
