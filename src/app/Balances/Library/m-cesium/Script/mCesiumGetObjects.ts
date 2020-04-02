@@ -55,7 +55,7 @@ export class CesiumGetObjects implements OnInit
 
 
 
-        let imageryLayers = this.viewer.imageryLayers;
+       // let imageryLayers = this.viewer.imageryLayers;
         //imageryLayers.addImageryProvider( this.CreateGeoserverLayer8082( true, "Raster2018:All_50_01_4326", "" ) );
       //  imageryLayers.addImageryProvider( new Cesium.GridImageryProvider() );
        // imageryLayers.addImageryProvider( this.CreateGeoserverLayer8081( true, "WorkSpace_publish:GvulotShifut", "" ) );
@@ -250,7 +250,7 @@ debugger;
         //Adding Labes and points
         this.DrawLabelsAndPoints( this.viewer );
         //Adding segments
-
+al
         this.viewer.zoomTo( this.viewer.entities );
     }
     UpdateAproxheight ()
