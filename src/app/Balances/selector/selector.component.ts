@@ -153,8 +153,10 @@ export class SelectorComponent implements OnInit
     this.GetObects.mInit = this.projid;
 
 
+    this.GetObects.bIsSimulator = this.bIsSimulator;
+    this.GetObects.simulatorXml = this.simulatorXml;
 
-    
+
     this.GetObects.ngOnInit();
 
     this.checkRank = new CheckRank( this._http, null, this.routerAct, null );

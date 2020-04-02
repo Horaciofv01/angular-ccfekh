@@ -10,7 +10,7 @@ export class BL
 
     Permissions ( typeID: number ): void
     {
-
+ret
         let mQueryString: string = this.mconfig.mUrl + "/mMethods/Permissions";
         let params: HttpParams = new HttpParams().set( 'typeID', typeID.toString() );
         params
