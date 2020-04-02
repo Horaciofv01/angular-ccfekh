@@ -142,10 +142,7 @@ export class SelectorComponent implements OnInit
 
 
             sceneMode: Cesium.SceneMode.SCENE2D,
-            imageryProvider: Cesium.createTileMapServiceImageryProvider( {
-                //Offline cesium resources
-                url: Cesium.buildModuleUrl( 'Assets/Textures/NaturalEarthII' )
-            } ),
+   
             baseLayerPicker: false,
             geocoder: false,
             animation: false,
