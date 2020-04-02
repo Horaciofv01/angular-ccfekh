@@ -167,7 +167,7 @@ return;
     GetSimulatorProject ()
     {
 
-/
+
 
 
         $( "#mwaitmediv" ).css( 'display', 'block' );

@@ -139,6 +139,24 @@ export class SelectorComponent implements OnInit
     if ( this.viewer == null )
     {
       this.viewer = new Cesium.Viewer( 'cesiumcontainer', {
+
+
+            sceneMode: Cesium.SceneMode.SCENE2D,
+            imageryProvider: Cesium.createTileMapServiceImageryProvider( {
+                //Offline cesium resources
+                url: Cesium.buildModuleUrl( 'Assets/Textures/NaturalEarthII' )
+            } ),
+            baseLayerPicker: false,
+            geocoder: false,
+            animation: false,
+            timeline: false,
+            shadows: true,
+            infoBox: false,
+            fullscreenButton: false,
+            navigationInstructionsInitiallyVisible: false
+
+
+
       } );
     }
     this.scene = this.viewer.scene;
