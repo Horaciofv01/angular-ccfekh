@@ -13,7 +13,7 @@ import { mSegment } from '../../Scripts/Ts/WikiView/step1';
 import $ from 'jquery';
 import { MatAutocompleteSelectedEvent } from '@angular/material/autocomplete';
 import { FormControl } from '@angular/forms';
-import { Projects, m2Points, mVertices, } from '../../Scripts/Ts/Stored/Commons';
+import { Projects, m2Points, mVertices} from '../../Scripts/Ts/Stored/Commons';
 import { Observable } from 'rxjs';
 import { map, startWith } from 'rxjs/operators';
 import { mConfig } from '../../Commons/mConfig';
@@ -24,7 +24,7 @@ import { HeightCalculation, TablePointHeights } from '../../Scripts/Ts/Stored/He
 import { mLinesLoops_01 } from '../../Scripts/Ts/WikiView/step1';
 import { TihumInteractive, SegmentsToTihum } from '../../Scripts/Ts/Stored/TihumInteractive';
 import { mGravimetria } from '../../Scripts/Ts/Stored/Gravimetria'
-import { Commons } from '../../Scripts/Ts/Stored/Commons';
+import { Commons,Simulator } from '../../Scripts/Ts/Stored/Commons';
 import { BalancesSelector_UI } from '../Library/Script/BalancesSelector_UI';
 import { CreateForms } from '../../Scripts/Ts/Stored/CreateForms'
 import { BL } from '../../Scripts/Ts/Stored/BL'
