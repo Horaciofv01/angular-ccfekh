@@ -300,7 +300,7 @@ debugger;
         let mRepeated: string[] = [];
 
         this.mMessageNull = this.mTempo;
-        let mObjectsClass: ManageObjectcs = new ManageObjectcs( viewer );
+        let mObjectsClass: ManageObjectcs = new ManageObjectcs( this.viewer );
         for ( let i = 0; i < this.mObjects.mRez.length; i++ )
         {
 
