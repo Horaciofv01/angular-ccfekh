@@ -25,6 +25,14 @@ export class CesiumGetObjects implements OnInit
     mTableDeltaHeights: TableDeltaHeights[];
     mTablePointHeights: TablePointHeights[];
 
+    simulatorXml: string = '';
+    bIsSimulator: boolean = false;
+
+
+
+
+
+
     constructor ( private _http: HttpClient, viewer: any, private route: ActivatedRoute )
     {
         this.viewer = viewer;
@@ -33,9 +41,7 @@ export class CesiumGetObjects implements OnInit
     ngOnInit () 
     {
 
-        if ( this.mInit === "0" )
-            this.GetDefaultProject();
-        else this.GetSelectedProject( this.mInit );
+
 
 
 
@@ -131,18 +137,8 @@ export class CesiumGetObjects implements OnInit
 
     GetDefaultProject ()
     {
-return;
-let mloops2 : loops2 = new loops2();
 
-
-                this.mObjects = mloops2.mXml;
-                // let rrrrr = res.mCsv.find( x => x.nam === '3239B' );
-                this.DoWork();
-                $( "#mwaitmediv" ).css( 'display', 'none' );
-
-
-
-        let mQueryString: string = this.mconfig.mUrl + "/api/ReadFiles?withCsv=false&withCoordinates=true&withGgal=true";
+       let mQueryString: string = this.mconfig.mUrl + "/api/ReadFiles?withCsv=false&withCoordinates=true&withGgal=true";
 
         let obs = this._http.get<mService>( mQueryString )
             .subscribe( ( res ) =>
@@ -154,6 +150,24 @@ let mloops2 : loops2 = new loops2();
             } );
 
     }
+
+
+
+
+    GetSimulatorProject ()
+    {
+        $( "#mwaitmediv" ).css( 'display', 'block' );
+        this._http.get<mService>( "https://cdn.jsdelivr.net/gh/Horaciofv01/angular-ccfekh@master/src/assets/Air/" + this.simulatorXml )
+            .subscribe( ( res ) =>
+            {
+                this.mObjects = res;
+
+                this.DoWork();
+                $( "#mwaitmediv" ).css( 'display', 'none' );
+            } );
+
+    }
+
 
 
     GetSelectedProject ( prjid: string )

@@ -193,7 +193,7 @@ export class SelectorComponent implements OnInit
     this.commons = new Commons();
     this.mUI.AllHeights = [];
 
-    this.commons.ZoomByWidth()
+    this.commons.ZoomByWidth();
 
 
   }
@@ -1448,6 +1448,33 @@ export class SelectorComponent implements OnInit
   getRankDetailsTable ( item: RankTitlesTable )
   {
     this.mUI.getRankDetailsTable( item, this.checkRank );
+  }
+
+  SelectSimulator ( event: any ) 
+  {
+    $( "#mwaitmediv" ).css( 'display', 'block' );
+    setTimeout( () =>
+    {
+      this.showLinesOnFirstTable = [];
+      this.showLoopsOnFirstTable = [];
+      this.showPointsOnFirstTable = [];
+      this.showTableAnalisisGral = [];
+      this.justSelectedIndex = [];
+
+
+      this.simulatorXml = event.srcElement.value;
+      this.bIsSimulator = true;
+
+      this.ngOnInit();
+
+      $( "#mDetailsRankHTML" ).html( '</br>ללא רשימות</br></br>' )
+      $( "#checkRanktitle" ).html( 'לא בחרו קטע' )
+      $( "#tabsCheckFilesDiv" ).css( 'height', '50px' )
+      $( "#tabsCheckFilesDiv" ).html( 'רענן בקרת חומר' )
+
+    }, 1 )
+
+
   }
 }
 
