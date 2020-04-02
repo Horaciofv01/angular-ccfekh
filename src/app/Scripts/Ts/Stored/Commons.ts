@@ -509,7 +509,7 @@ export class Simulator
         this.mValues.push( new strKeyValues( 'תיאום הרצי דגם 1', 'TihumArtz1.json', null, null ) );
         this.mValues.push( new strKeyValues( 'תיאום הרצי דגם 2', 'tihumArtzi.json', null, null ) );
         this.mValues.push( new strKeyValues( 'לולאות רמת גן', 'RamatGan.json', null, null ) );
-        this.mValues.push( new strKeyValues( 'קינרת', 'kinere.json', null, null ) );
+        this.mValues.push( new strKeyValues( 'קינרת', 'kineret.json', null, null ) );
     }
 }
 
