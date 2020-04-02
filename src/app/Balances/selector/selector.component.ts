@@ -142,7 +142,6 @@ export class SelectorComponent implements OnInit
 
 
             sceneMode: Cesium.SceneMode.SCENE2D,
-   
             baseLayerPicker: false,
             geocoder: false,
             animation: false,

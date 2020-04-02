@@ -57,7 +57,7 @@ export class CesiumGetObjects implements OnInit
 
         let imageryLayers = this.viewer.imageryLayers;
         //imageryLayers.addImageryProvider( this.CreateGeoserverLayer8082( true, "Raster2018:All_50_01_4326", "" ) );
-        imageryLayers.addImageryProvider( new Cesium.GridImageryProvider() );
+      //  imageryLayers.addImageryProvider( new Cesium.GridImageryProvider() );
        // imageryLayers.addImageryProvider( this.CreateGeoserverLayer8081( true, "WorkSpace_publish:GvulotShifut", "" ) );
 
 
