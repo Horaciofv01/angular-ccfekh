@@ -41,7 +41,17 @@ export class CesiumGetObjects implements OnInit
     ngOnInit () 
     {
 
+        if ( this.bIsSimulator === true )
+        {
+            this.GetSimulatorProject();
+            return;
+        }
 
+
+
+        if ( this.mInit === "0" )
+            this.GetDefaultProject();
+        else this.GetSelectedProject( this.mInit );
 
 
 

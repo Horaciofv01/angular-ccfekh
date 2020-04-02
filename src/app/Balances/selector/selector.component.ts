@@ -151,6 +151,10 @@ export class SelectorComponent implements OnInit
     //$( "#mwaitmediv" ).css( 'display', 'block' );
     this.GetObects = new CesiumGetObjects( this._http, this.viewer, this.routerAct );
     this.GetObects.mInit = this.projid;
+
+
+
+    
     this.GetObects.ngOnInit();
 
     this.checkRank = new CheckRank( this._http, null, this.routerAct, null );
