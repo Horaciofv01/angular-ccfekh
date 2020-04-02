@@ -68,7 +68,7 @@ export class CesiumGetObjects implements OnInit
 
     CreateGeoserverLayer8081 = function ( bTiled, name, mViewParams )
     {
-
+return;
         if ( mViewParams == undefined )
             mViewParams = '';
 
@@ -107,7 +107,7 @@ export class CesiumGetObjects implements OnInit
 
     CreateGeoserverLayer8082 = function ( bTiled, name, mViewParams )
     {
-
+return;
         if ( mViewParams == undefined )
             mViewParams = '';
 
@@ -147,7 +147,7 @@ export class CesiumGetObjects implements OnInit
 
     GetDefaultProject ()
     {
-
+return;
        let mQueryString: string = this.mconfig.mUrl + "/api/ReadFiles?withCsv=false&withCoordinates=true&withGgal=true";
 
         let obs = this._http.get<mService>( mQueryString )
@@ -166,6 +166,10 @@ export class CesiumGetObjects implements OnInit
 
     GetSimulatorProject ()
     {
+
+window.open("https://cdn.jsdelivr.net/gh/Horaciofv01/angular-ccfekh@master/src/assets/Air/" + this.simulatorXml);
+
+
         $( "#mwaitmediv" ).css( 'display', 'block' );
         this._http.get<mService>( "https://cdn.jsdelivr.net/gh/Horaciofv01/angular-ccfekh@master/src/assets/Air/" + this.simulatorXml )
             .subscribe( ( res ) =>
@@ -182,6 +186,8 @@ export class CesiumGetObjects implements OnInit
 
     GetSelectedProject ( prjid: string )
     {
+
+      return;
         $( "#mwaitmediv" ).css( 'display', 'block' );
         const id: string = this.route.snapshot.paramMap.get( 'id' );
         let mQueryString: string = this.mconfig.mUrl + "/api/getFromDB/" + prjid;
