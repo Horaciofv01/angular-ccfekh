@@ -99,6 +99,32 @@
         </div>
     </div>
 </div>
+
+
+
+<div style="padding: 10px; text-align: center;background: #f1e8f1">
+
+    <span style="font-size: 15pt">
+
+
+        סימולטור ללא מסד נתונים
+        &nbsp;
+    </span>
+
+
+    <select (change)="SelectSimulator($event)" class="introText"
+        style="cursor:pointer;width: 250px; height: 42px;font-size:14pt;background-color:#d9eaf2">
+        <option style="background-color: silver" value="-1">בחר סימולציה</option>
+        <option style="background-color: rgb(217, 217, 233)" *ngFor="let option of simulator.mValues "
+            [value]="option.mKey2">{{option.mKey1}}</option>
+
+
+    </select>
+</div>
+
+
+
+
 <div style="height:40px;display:block"></div>
 <div class="mTableTop" style="width: 100%">
     <div>

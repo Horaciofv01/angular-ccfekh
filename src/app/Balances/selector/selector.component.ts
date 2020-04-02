@@ -13,7 +13,7 @@ import { mSegment } from '../../Scripts/Ts/WikiView/step1';
 import $ from 'jquery';
 import { MatAutocompleteSelectedEvent } from '@angular/material/autocomplete';
 import { FormControl } from '@angular/forms';
-import { Projects, m2Points, mVertices } from '../../Scripts/Ts/Stored/Commons';
+import { Projects, m2Points, mVertices, } from '../../Scripts/Ts/Stored/Commons';
 import { Observable } from 'rxjs';
 import { map, startWith } from 'rxjs/operators';
 import { mConfig } from '../../Commons/mConfig';
@@ -121,6 +121,13 @@ export class SelectorComponent implements OnInit
   ////////////////////////////////////////////////////////
   checkRank: CheckRank;
   //////////////////////////////////////////////////////////
+
+  simulator: Simulator = new Simulator();
+  simulatorXml: string = "";
+  bIsSimulator: boolean = false;
+
+
+
   ngOnInit ()
   {
     if ( this.projid == "0" )
